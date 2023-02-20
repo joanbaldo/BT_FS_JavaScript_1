@@ -47,18 +47,34 @@ console.log(`Mi nombre es ${miNombre} y mi número favorito es ${miNumeroFav}`)
 console.log('Seré un crack en JavaScript al terminar el bootcamp')
 
 //Muestra por consola solo los primeros 5 caracteres de la siguiente variable = ‘Hola soy un crack”
+let star = 'Hola soy un crack'
+console.log(star.substring(0,4))
+let starEdit = star.substring(0,5) //Hay que añadir una posición más
+console.log(starEdit)
+console.log(starEdit.split(""))
 
 //Convierte la variable miNumeroFav en una string y luego muestra por consola el tipo de dato que es dicha variable
+let miNumeroFavString = toString(miNumeroFav)
+console.log(typeof miNumeroFav)
+console.log(typeof miNumeroFavString)
 
 //Crea una variable y asignale un valor. Después utilizando template literal haz uso de la variable que habías creado, guarda el template literal en otra variable y sacala por consola.
+const pupil = 'Don José'
+console.log(`Mi alumno es ${pupil} y es un crack`)
+let resExam = `Mi alumno es ${pupil} y es un crack`
+console.log(resExam)
 
 //Muestra por consola la variable PI hasta los 2 primeros decimales
+let PItoString = toString(PI)
+console.log(PItoString.substring(0,1))
 
 // PARTE 2 ARRAYS
 
 //Crear variable de nombre arrayVacio cuyo valor sea un array vacío
+const arrayVacio = []
 
 //Crear variable de nombre arrayNumeros declarada con un array de números del 0 al 9 (0, 1, 2...)
+const arrayNumeros = [0,1,2,3,4,5,6,7,8,9]
 
 //Crear variable de nombre arrayNumeros2 declarada con un array de números del 0 al 15 (0, 1, 2...)
 
