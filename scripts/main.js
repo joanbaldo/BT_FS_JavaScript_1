@@ -155,7 +155,7 @@ console.log(Persona.nombre)
 console.log(FullStackDeveloper.lenguajes[0])
 
 //Crea un objeto de nombre Portatil que tenga la propiedad marca, accede a esta propiedad con .marca y muestrala por consola
-const Portatil = {
+let Portatil = {
     marca: 'Toshiba',
 }
 console.log(Portatil.marca)
@@ -203,9 +203,28 @@ const nivelesTinta = [impresora.tinta.rojo, impresora.tinta.verde,impresora.tint
 console.log('los niveles de tinta son ' + nivelesTinta);
 
 //Crea un objeto de nombre Movil con la propiedad especificaciones obtén el valor de la propiedad con ["especificaciones"] guardándolo en la variable especificaciones y muestrala por consola
+const Movil = {
+    especificaciones: 'Intel I9, 16GB Ram, 1Tb SSD',
+}
+const especificaciones = Movil.especificaciones
+console.log(especificaciones)
+//NOTA También vale: 
+// const especificaciones = movil["especificaciones"] ??;
 
 //Dado el objeto de nombre Portatil con la propiedad marca, modifica el valor de la propiedad marca por el valor “MSI”, consolea el resultado
+Portatil.marca = 'MSI'
+console.log(Portatil.marca)
 
 //Dado el objeto de nombre Concierto añade el valor Guns N' Roses a la propiedad grupos, consolea el resultado
+Concierto.grupos.push('Guns N\' Roses');
+console.log(Concierto.grupos)
 
 //Dado el objeto de nombre Concierto, crea la propiedad fecha, dale un valor y después modifica el valor de la propiedad por el valor new Date() (fecha de hoy, investiga que es new Date y como usarlo), consolea el resultado
+Concierto.fecha = 'Mayo 78'
+Concierto.fecha =  new Date()
+
+console.log(Concierto.fecha)
+
+//Dado el objeto de nombre Grupo modifica el valor de la propiedad integrantes quitándole un integrante, consolea el número de integrantes actual (ojo! el número, no los nombres de los integrantes)
+grupo.integrantes.pop([2]);
+console.log(grupo.integrantes.length);
