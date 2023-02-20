@@ -77,24 +77,36 @@ const arrayVacio = []
 const arrayNumeros = [0,1,2,3,4,5,6,7,8,9]
 
 //Crear variable de nombre arrayNumeros2 declarada con un array de números del 0 al 15 (0, 1, 2...)
+const arrayNumeros2 = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
 
 //Crear variable de nombre arrayNumerosPares declarada con un array con los números pares del 0 al 9 (considerando al 0 par)
+const arrayNumerosPares = [0,2,4,6,8]
 
 //Crear variable de nombre arrayNumerosNeg declarada con un array de números del 0 al -9 (0, -1, -2...)
+const arrayNumerosNeg = [0,-1,-2,-3,-4,-5,-6,-7,-8,-9]
 
 //Crear variable de nombre holaMundo declarada con valor array con las palabras 'Hola' y 'Mundo'
+const holaMundo = ['Hola','Mundo']
 
 //Crear variable de nombre loGuardoTodo declarada con valor array con valores 'hola', 'que', 23, 42.33 y 'tal'
+const loGuardoTodo = ['hola','que',23,42.33,'tal']
 
 //Crear variable de nombre arrayDeArrays declarada con valor array: [[756, 'nombre'], [225, 'apellido'], [298, 'direccion']]
+const arrayDeArrays = [[759,'nombre'],[225,'apellido'],[298,'direccion']]
 
 //Muestra por consola la longitud del array “loGuardoTodo”
+console.log(loGuardoTodo.length)
 
 //Crea un nuevo elemento y añadelo al final del array “loGuardoTodo” y muestralo por consola
+loGuardoTodo.push(99);
+console.log(loGuardoTodo)
 
-//Muestra por consola la propiedad ‘que’ de la variable loGuardoTodo
+//Muestra por consola el valor ‘que’ de la variable loGuardoTodo
+console.log(loGuardoTodo[1])
 
-//Añade la propiedad ‘Euralio’ en la array loGuardoTodo y muestrala por consola
+//Añade el valor ‘Euralio’ en la array loGuardoTodo y muestrala por consola
+loGuardoTodo.push('Euralio');
+console.log(loGuardoTodo)
 
 // PARTE 3 OBJETOS
 
