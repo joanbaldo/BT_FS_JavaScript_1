@@ -65,8 +65,9 @@ let resExam = `Mi alumno es ${pupil} y es un crack`
 console.log(resExam)
 
 //Muestra por consola la variable PI hasta los 2 primeros decimales
-let PItoString = toString(PI)
-console.log(PItoString.substring(0,1))
+console.log(PI.toFixed(2));
+
+
 
 // PARTE 2 ARRAYS
 
@@ -111,34 +112,95 @@ console.log(loGuardoTodo)
 // PARTE 3 OBJETOS
 
 //Crea un objeto de nombre Coche que tenga las propiedades: marca, modelo y matrícula con sus respectivos valores
-
+const Coche = {
+    marca: 'seat',
+    modelo: 'cupra',
+    matricula: 'v1092CX'
+}
 //Crea un objeto de nombre Casa que tenga las propiedades: codPostal, calle, portal y piso con sus respectivos valores
-
+const Casa = {
+    codPostal: 46815,
+    calle: 'Avenida Uno',
+    portal: 6,
+    piso: 4
+}
 //Crea un objeto de nombre FullStackDeveloper que tenga las propiedades: array lenguajes(ej. ‘javascript’,’php’), array proyectos(ej. ‘mi página personal’,etc)
+const FullStackDeveloper = {
+    lenguajes: ['javascript','php','java'],
+    proyectos: ['mi página personal','ejercicios javascript']
+}
 
 //Crea un objeto de nombre Perro que tenga las propiedades: nombre, raza, color y edad con sus respectivos valores
-
+const Perro = {
+    nombre: 'chispis',
+    raza: 'salchicha',
+    color: 'negro',
+    edad: 1
+}
 //Crea un objeto de nombre Noticia que tenga las propiedades: titular y cuerpo con sus respectivos valores
-
+const Noticia = {
+    titular:'TA del BoootCamp FullStack asesina a alumno con un portaideas',
+    cuerpo: 'El official T.A Frederik von Arval,a las 11:22 del 6o día del RampUp acabó con la vida de uno de los alumnos presentes en la clase. Según relatan los testigos,la víctima intentó acceder a la pizarra digital de la clase para configurar el volumen de los altavoces, cosa que llevó a la locura al citado T.A que aprovechó para frenar tan osada acción empleando un portaideas que casualmente se encontraba junto a la pizarra. Afortunadamente el objeto no sufrió daño alguno al estar envuelto en su plástico de protección.'
+}
 //Crea un objeto de nombre Persona que tenga las propiedades: nombre, apellidos y edad con sus respectivos valores
-
+const Persona = {
+    nombre: 'Kel' ,
+    apellidos: 'Palazzi Montelli',
+    edad: 35,
+}
 //Muestra por consola el nombre de la variable Persona
+console.log(Persona.nombre)
 
 //Muestra por consola el lenguaje javascript de la variable FullStackDevelope
+console.log(FullStackDeveloper.lenguajes[0])
 
 //Crea un objeto de nombre Portatil que tenga la propiedad marca, accede a esta propiedad con .marca y muestrala por consola
+const Portatil = {
+    marca: 'Toshiba',
+}
+console.log(Portatil.marca)
 
 //Obtén el valor de la propiedad marca del objeto anteriormente creado (Portatil) con ["marca"] y muestrala por consola
+console.log(Portatil['marca'])
 
 //Crea un objeto de nombre Concierto con una propiedad llamada grupos que es un array, obtén el valor de la propiedad y muestrala por consola
+const Concierto = {
+    grupos:['U2','Fugees','Bonney M'],
+}
+console.log(Concierto.grupos)
 
 //Crea un objeto de nombre Led, con las propiedades: lampara1 con valor rojo, lampara2 con valor verde y lampara3 con valor azul, obtén el valor de las propiedades guardándolo en la variable array RGB[Rojo, Verde, Azul] y muestra este array por consola. La array por consola debería mostrarse así [‘rojo’,’verde’,’azul’]
+const Led = {
+    lampara1: 'rojo',
+    lampara2: 'verde',
+    lampara3: 'azul',
+       }
+const RGB = [Led.lampara1, Led.lampara2, Led.lampara3]
+console.log(RGB)
 
 //Crea un objeto de nombre O_Error con la propiedad código, obtén el valor de la propiedad y muestrala por consola
+const O_Error = {
+    codigo: 'error',
+}
+console.log(O_Error.codigo)
 
 //Crea un objeto de nombre Grupo con la propiedad integrantes (array),obtén el valor de la propiedad guardándolo en la variable integrantes y muestra por consola a uno de los integrantes
+const grupo = {
+    integrantes: ['Jose', 'Isma', 'Fede']
+};
+const integrantes = grupo.integrantes[1];
+console.log(integrantes);
 
 //Crea un objeto de nombre Impresora con la propiedad objeto tinta{rojo, verde, azul}, obtén el valor de la propiedad guardándolo en la variable nivelesTinta y muestrala por consola
+const impresora = {
+    tinta: {
+        rojo: 'medio',
+        verde: 'bajo',
+        azul: 'alto',
+    },
+};
+const nivelesTinta = [impresora.tinta.rojo, impresora.tinta.verde,impresora.tinta.azul]
+console.log('los niveles de tinta son ' + nivelesTinta);
 
 //Crea un objeto de nombre Movil con la propiedad especificaciones obtén el valor de la propiedad con ["especificaciones"] guardándolo en la variable especificaciones y muestrala por consola
 
